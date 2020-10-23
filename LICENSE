@@ -1,0 +1,14 @@
+This source code is provided for the purposes of scientific reproducibility under the following
+limited license from Element AI Inc. The code is an implementation of the DuoRAT model, see
+Scholak et al., DuoRAT: Towards Simpler Text-to-SQL Models, https://arxiv.org/abs/2010.11119.
+
+Except where stated explicitly otherwise, the copyright to the source code is licensed under the
+Creative Commons - Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0):
+https://creativecommons.org/licenses/by-nc/4.0/.
+
+Any commercial use (whether for the benefit of third parties or internally in production) requires
+an explicit license. The subject-matter of the DuoRAT model and associated materials are the
+property of Element AI Inc. and may be subject to patent protection. No license to patents is
+granted hereunder (whether expressly or implied).
+
+Copyright © 2020 Element AI Inc. All rights reserved.
