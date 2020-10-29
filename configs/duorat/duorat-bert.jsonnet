@@ -15,7 +15,7 @@
                 pretrained_model_name_or_path: 'bert-base-uncased',
                 trainable: false,
                 num_return_layers: 1,
-                embed_dim: 768,
+                embed_dim: 256,
                 use_dedicated_gpu: false,
                 use_affine_transformation: true,
                 use_attention_mask: false,
