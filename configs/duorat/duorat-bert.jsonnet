@@ -15,7 +15,7 @@
                 pretrained_model_name_or_path: 'bert-base-uncased',
                 trainable: false,
                 num_return_layers: 1,
-                embed_dim: 300,
+                embed_dim: 768,
                 use_dedicated_gpu: false,
                 use_affine_transformation: true,
                 use_attention_mask: false,
@@ -26,7 +26,7 @@
             "rat_attention_dropout": 0.1,
             "rat_dropout": 0.1,
             "rat_ffn_dim": 256,
-            "rat_num_heads": 10,
+            "rat_num_heads": 8,
             "rat_num_layers": 6,
             "rat_relu_dropout": 0.1,
             source_relation_types: {
