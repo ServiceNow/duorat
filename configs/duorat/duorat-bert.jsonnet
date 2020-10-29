@@ -45,12 +45,16 @@
         },
         preproc+: {
             name: 'BertDuoRAT',
-            pretrained_model_name_or_path: 'bert-base-uncased',
             add_cls_token: true,
             add_sep_token: false,
 
             min_freq: 5,
             max_count: 5000,
+
+            tokenizer: {
+                name: 'BERTTokenizer',
+                pretrained_model_name_or_path: 'bert-base-uncased',
+            },
         },
     },
     "train": {
