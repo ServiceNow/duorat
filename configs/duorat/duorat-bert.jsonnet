@@ -16,6 +16,8 @@
                 trainable: false,
                 num_return_layers: 1,
                 embed_dim: 300,
+                use_dedicated_gpu: false,
+                use_affine_transformation: true,
                 use_attention_mask: false,
                 use_token_type_ids: false,
                 use_position_ids: false,
@@ -58,6 +60,7 @@
         },
     },
     "train": {
+        "amp_enabled": true,
         "batch_size": 20,
         "eval_batch_size": 20,
         "eval_beam_size": 1,
