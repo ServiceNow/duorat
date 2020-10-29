@@ -15,7 +15,9 @@
                 pretrained_model_name_or_path: 'bert-base-uncased',
                 trainable: false,
                 num_return_layers: 1,
-                embed_dim: 300,
+                embed_dim: 256,
+                use_dedicated_gpu: false,
+                use_affine_transformation: true,
                 use_attention_mask: false,
                 use_token_type_ids: false,
                 use_position_ids: false,
@@ -24,7 +26,7 @@
             "rat_attention_dropout": 0.1,
             "rat_dropout": 0.1,
             "rat_ffn_dim": 256,
-            "rat_num_heads": 10,
+            "rat_num_heads": 8,
             "rat_num_layers": 6,
             "rat_relu_dropout": 0.1,
             source_relation_types: {
@@ -45,15 +47,20 @@
         },
         preproc+: {
             name: 'BertDuoRAT',
-            pretrained_model_name_or_path: 'bert-base-uncased',
             add_cls_token: true,
             add_sep_token: false,
 
             min_freq: 5,
             max_count: 5000,
+
+            tokenizer: {
+                name: 'BERTTokenizer',
+                pretrained_model_name_or_path: 'bert-base-uncased',
+            },
         },
     },
     "train": {
+        "amp_enabled": true,
         "batch_size": 20,
         "eval_batch_size": 20,
         "eval_beam_size": 1,

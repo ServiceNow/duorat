@@ -1,4 +1,4 @@
-(import 'duorat-finetune-bert-large.jsonnet')(output_from=true) {
+(import 'duorat-finetune-bert-large.jsonnet') {
     model+: {
         encoder+: {
             initial_encoder+: {
