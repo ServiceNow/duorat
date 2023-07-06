@@ -146,3 +146,6 @@ year = {2020},
 journal = {arXiv:2010.11119 [cs]},
 }
 ```
+
+## Vulnerability Reporting
+Please notify psirt-oss@servicenow.com regarding any vulnerability reports in addition to following current reporting procedure.
